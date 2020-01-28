@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- cory: clean this UP!!!!!  List of edits is in the email.  READ EACH STEP of the instructions and slooow down -->
+
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.0/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/9b22d73af0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="wja-style.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="wja-forecast.js" type="text/javascript"></script>
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container mainContainer">
+        <div class=" header jumbotron p-4 ">
+            <h1 class="text-center ">Weather Dashboard</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-4 container">
+                    <div class="row">
+                        <form class="form-inline ">
+                            <h4 id="search" class="mr-5">Search for City</h4>
+                            <input id="userCity" class="form-control form-control-md mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                            <button id="bttnSearch" class="btn btn-warning  "> <i class=" fas fa-search" aria-hidden="true"></i></button>
+                        </form>
+                        <div id="search" class="row  d-xl-block">
+                            <div class="col-lg-8 col-md-12 col-sm-121 " id="recentSearches"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" col-md-8 col-sm-12 containerConditions float-right ">
+                    <div class=" row">
+                        <div class="col " id="currentConditions">
+
+
+
+                            <!-- content will be appended here-->
+                        </div>
+
+                        <div class=" col">
+                            <span id="iconSpan"></span><img style="font-size: 5rem" id="wicon">
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <!-- display 5 days forecast -->
+                    <div class="row daysForecastheader">
+                        <div class="col">
+
+                            <h3 id="forecasth3">5 days Forecast
+                                <h3>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="row justify-content-between daysForecast">
+
+
+                    <div id="forecastDiv1" class="col-md-2 ">
+                        <h5 id=date1></h5>
+                        <p id="temperature1" class="temperature"></p>
+                        <img id="wicon1" alt="weathericon">
+                        <p id="humidity1" class="humidity"></p>
+                        <p id="uvIndex1" class="uvIndex"></p>
+                    </div>
+
+                    <div id="forecastDiv2" class="col-md-2  ">
+                        <h5 id=date2></h5>
+                        <p id="temperature2" class=" temperature mt-1"></p>
+                        <img id="wicon2" alt="weathericon">
+                        <p id="humidity2" class="humidity"></p>
+                        <p id="uvIndex2" class="uvIndex"></p>
+                    </div>
+
+                    <div id="forecastDiv3" class="col-md-2 ">
+                        <h5 id=date3></h5>
+                        <p id="temperature3" class="mt-1"></p>
+                        <img id="wicon3" alt="weathericon">
+                        <p id="humidity3" class="humidity"></p>
+                        <p id="uvIndex3" class="uvIndex"></p>
+                    </div>
+
+                    <div id="forecastDiv4" class="col-md-2   ">
+                        <h5 class="text-center" id=date4></h5>
+                        <p id="temperature4" class="mt-1 temperature"></p>
+                        <img id="wicon4" alt="weathericon">
+                        <p id="humidity4" class="humidity"></p>
+                        <p id="uvIndex4" class="uvIndex"></p>
+                    </div>
+
+                    <div id="forecastDiv5" class="col-md-2 col-sm-1  ">
+                        <h5 class=text-center id=date5></h5>
+                        <p id="temperature5" class="mt-2 temperature"></p>
+                        <img id="wicon5" alt="weathericon">
+                        <p id="humidity5" class="humidity"></p>
+                        <p id="uvIndex5" class="uvIndex"></p>
+                    </div>
+
+
+                </div>
+
+                <!-- Footer -->
+
+
+                <nav class=" myFooter footer-copyright text-center py-3 justify-content-center fixed-bottom font-small blue">
+
+                </nav>
+
+                <!-- Footer -->
+            </div>
+
+        </div>
+
+</body>
