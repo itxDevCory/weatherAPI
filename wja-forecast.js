@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 });
 
-function getForecast() { =
+function getForecast() {
     var city = $("#city").val();
     var fiveDay = $("#fiveDay").val();
 
@@ -14,7 +14,7 @@ function getForecast() { =
 
         $.ajax({
             url: 'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + "&units=metric" + "&cnt="
-            1 day "&APPID=a85ae77cdf014dc6b4ed9a09b04bdb1d",
+            1 day = "dc5c58089568ea1160335da1f71da02f",
             type: "GET",
             dataType: "jsonp",
             success: function(data) {
@@ -55,4 +55,5 @@ function getForecast() { =
 
 
 
-    }
+    }©
+    2020 GitHub, I
