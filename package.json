@@ -1,0 +1,21 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itxDevCory/weatherAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itxDevCory/weatherAPI/issues"
+  },
+  "homepage": "https://github.com/itxDevCory/weatherAPI#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "node": "^13.10.1"
+  }
+}
